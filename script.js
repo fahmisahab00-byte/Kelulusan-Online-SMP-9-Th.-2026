@@ -193,7 +193,7 @@ async function loginSiswa() {
   // ── Cek status penutupan manual oleh admin ─────────────────
   const appStatus = isAppClosed();
   if (appStatus.closed && appStatus.reason === 'manual') {
-    showAlert(alertEl, '<i class="bi bi-lock-fill"></i> Pengumuman kelulusan sementara <strong>ditutup</strong> oleh administrator. Silakan hubungi pihak sekolah.', 'danger');
+    showAlert(alertEl, '<i class="bi bi-lock-fill"></i> <strong>Pengumuman kelulusan peserta didik akan terbuka secara otomatis tepat pada pukul 18.00 WIB.</strong>.', 'danger');
     return;
   }
 
