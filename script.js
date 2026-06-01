@@ -289,7 +289,7 @@ async function loginSiswa() {
     
     // Jika server mengembalikan closed = true
     if (response.closed === true) {
-      showAlert(alertEl, '<i class="bi bi-lock-fill"></i> <strong>Pengumuman kelulusan peserta didik akan terbuka secara otomatis tepat pada pukul 18.00 WIB.</strong>.', 'danger');
+      showAlert(alertEl, '<i class="bi bi-lock-fill"></i> <strong>Akses kelulusan dibuka sesuai jadwal. Setelah itu, sistem akan pamit dan tertutup otomatis.</strong>.', 'danger');
     } else {
       const siswa = response.data;
       if (!siswa) {
